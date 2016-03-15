@@ -1,12 +1,11 @@
 var path = require('path');
 var copyWPPlugin = require('copy-webpack-plugin');
 
-console.log(path.resolve(__dirname, '../index.html'));
 
 function loadPlugins(){
   var plugins = [];
   plugins.push(new copyWPPlugin([
-    {from: path.resolve(__dirname, '../index.html')}
+    {from: path.resolve(__dirname, 'index.html')}
   ]));
   return plugins;
 }
@@ -34,15 +33,15 @@ module.exports = {
   },
   entry: [
     'webpack/hot/dev-server',
-    'webpack-dev-server/client?http://localhost:9000',
-    path.resolve(__dirname, '../src/index.js')
+    'webpack-dev-server/client?http://localhost:8080',
+    path.resolve(__dirname, 'src/index.js')
   ],
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.resolve(__dirname, '../dist')
+    contentBase: path.resolve(__dirname, 'dist')
   },
   plugins: loadPlugins()
 }
