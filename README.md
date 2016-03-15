@@ -2,7 +2,7 @@
 
 _No Grunt/Gulp required!_
 
-Boilerplate for building a client-based JavaScript library in ES6 using the following components:
+Boilerplate for building a React application in ES6 using the following components:
 
 * [Babel](https://babeljs.io/)
 * [webpack](https://webpack.github.io/)
