@@ -5,7 +5,7 @@ var copyWPPlugin = require('copy-webpack-plugin');
 function loadPlugins(){
   var plugins = [];
   plugins.push(new copyWPPlugin([
-    {from: path.resolve(__dirname, 'index.html')}
+    {from: path.resolve(__dirname, 'src/index.html')}
   ]));
   return plugins;
 }
