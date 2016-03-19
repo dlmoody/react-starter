@@ -11,6 +11,7 @@ function loadPlugins(){
 }
 
 module.exports = {
+  devtool: "source-map",
   module: {
     loaders: [
       {
@@ -24,7 +25,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(bower_components|node_modules)/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query:
           {
             presets:['es2015', 'react', 'stage-1']
