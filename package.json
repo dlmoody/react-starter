@@ -1,11 +1,11 @@
 {
-  "name": "es6-karma-jasmine-webpack-boilerplate",
+  "name": "react-starter",
   "version": "0.2.0",
   "description": "Boilerplate for ES6 client-based library. Uses Babel and webpack for transpiling and building, Karma and Jasmine for unit testing, and Istanbul/Isparta for code coverage.",
-  "main": "dist/calculator.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zyml/es6-karma-jasmine-webpack-boilerplate"
+    "url": "https://github.com/dlmoody/react-starter"
   },
   "scripts": {
     "start": "webpack-dev-server --devtool eval --progress --colors --hot --inline  --config webpack.config.js",
@@ -26,7 +26,7 @@
     "istanbul",
     "boilerplate"
   ],
-  "author": "Melvin Lee (http://www.zy.sg/)",
+  "author": "David Moody <moody.david@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.4.0",
